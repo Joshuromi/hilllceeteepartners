@@ -4,6 +4,15 @@
     --secondary: #34AD54;
     --light: #FFFFFF;
     --dark: #020202;
+
+    --fs-h1: 2.8rem;
+    --fs-h2: 2.2rem;
+    --fs-h3: 1.8rem;
+    --fs-h5: 1.2rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
 
@@ -61,8 +70,32 @@
     opacity: 1;
 }
 
+body,p {
+    font-size: var(--fs-body);
+}
+
 
 /*** Heading ***/
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+h2 {
+  font-size: var(--fs-h2);
+}
+h3 {
+  font-size: var(--fs-h3);
+}
+h5 {
+    font-size: var(--fs-h5);
+}
+
 h1,
 h2,
 .fw-bold {
@@ -81,6 +114,15 @@ h6,
     font-weight: 600 !important;
 }
 
+@media (max-width: 800px) {
+    :root {
+      --fs-h1: 1.8rem;
+      --fs-h2: 1.4rem;
+      --fs-h3: 1.15rem;
+      --fs-h5: 0.9rem;
+      --fs-body: 0.9rem;
+    }
+}
 
 /*** Button ***/
 .btn {
